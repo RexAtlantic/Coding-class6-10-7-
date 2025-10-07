@@ -907,9 +907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cb95fc3771ff54ca072b66417d0222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::circle
-  rb: {fileID: 2134771386}
-  movespeed: 15
-  move: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  rb: {fileID: 0}
+  force: 2
 --- !u!50 &2134771386
 Rigidbody2D:
   serializedVersion: 5
