@@ -17,6 +17,8 @@ public class circle : MonoBehaviour
 
     public InputActionReference move;
 
+    public InputActionReference interact;
+
     private void Awake()
     {
         if (instance == null)
@@ -42,6 +44,11 @@ public class circle : MonoBehaviour
     void Update()
     {
         _direction = move.action.ReadValue<Vector2>();
+
+        if (interact.action.WasPressedThisFrame())
+        {
+            GameManager.instance.score++;
+        }
     }
 
     private void FixedUpdate()
